@@ -13,11 +13,18 @@
     </style>
 </head>
 <body>
-    <script type="module">
+<script type="module">
   import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'
 
-  Typebot.initPopup({ typebot: "my-typebot-qvsggmy", autoShowDelay: 1000 });
+  Typebot.initBubble({
+    typebot: "my-typebot-qvsggmy",
+    theme: {
+      button: { backgroundColor: "#000" },
+      chatWindow: { backgroundColor: "#FAF3EA" },
+    },
+  });
 </script>
+
 
 </body>
 </html>
